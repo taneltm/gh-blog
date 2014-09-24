@@ -8,6 +8,7 @@ Creating blog posts is easy!
 1. Write your blog posts using the Markdown format.
 2. Save the posts under the posts folder.
 3. Add an entry to `published.json` to make your blog post public.
+Because GitHub allows you to create and edit files, *You can do all that from GitHub's website!*
 
 Settings
 --------
