@@ -1,5 +1,5 @@
-blog.github.io
-==============
+GH-Blog
+=======
 
 GH-Blog is a databaseless Blog system for GitHub Pages!
 
