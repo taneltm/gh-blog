@@ -1,0 +1,12 @@
+<header>
+	<h1><%= settings.title %></h1>
+</header>
+<main>
+	<% _.each(posts, function(post) { %>
+	<a class="post-link" href="#post/<%= post[2] %>">
+		<span class="name"><%= post[1] %></span>
+		<span class="time"><%= post[0] %></span>
+	</a>
+	<% }) %>
+</main>
+<footer>Checkout my GitHub page, <a href="<%= settings.owner.github %>" target="_blank"><%= settings.owner.github %></a></footer>

@@ -1,0 +1,10 @@
+{
+	"title": "Example GH-Blog",
+	"owner": {
+		"name": "John Smith",
+		"github": "http://github.com/taneltm",
+		"e-mail": "john.smith@example.com",
+		"skype": "johnsmith-example"
+	},
+	"theme": "minimal"
+}
