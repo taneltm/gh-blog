@@ -4,16 +4,16 @@ define(
 		var View = function (postFile) {
 			this.template = _.template(t);
 
-			this.init = function() {
-				var model = {
-					"settings": JSON.parse(settings),
-					"post": "Oh no, broken link!"
-				};
+			this.model = {
+				"settings": JSON.parse(settings)
+			};
 
-				$.get("posts/"+postFile+".md", function(data) {
-					model.post = marked(data); 
-					this.render(model);
-				}.bind(this));
+			this.init = function() {
+				$.ajax({
+					url: "posts/"+postFile+".md",
+					type: "GET",
+					cache: false
+				}).done(this.postLoaded).fail(this.postNotFound);
 			};
 
 			this.render = function(model) {
@@ -23,6 +23,18 @@ define(
 			this.destroy = function() {
 				$("body").empty();
 			};
+
+			this.postLoaded = function(data) {
+				this.model.post = marked(data); 
+				this.render(this.model);
+			};
+
+			this.postNotFound = function() {
+				this.model.post = "Oh no! The link is broken... :(";
+				this.render(model);
+			};
+
+			_.bindAll(this);
 
 			this.init();
 		};
