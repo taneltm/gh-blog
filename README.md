@@ -1,7 +1,7 @@
 GH-Blog
 =======
 
-GH-Blog is a databaseless Blog system for GitHub Pages!
+GH-Blog is a databaseless blog site for GitHub Pages!
 
 Check the current example: [http://taneltm.github.io/gh-blog/](http://taneltm.github.io/gh-blog/)
 
