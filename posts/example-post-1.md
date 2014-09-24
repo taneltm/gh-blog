@@ -1,7 +1,7 @@
 About GH-Blog
 =============
 
-GH-Blog is a databaseless Blog system for GitHub Pages!  
+GH-Blog is a databaseless blog site for GitHub Pages!  
 
 Creating blog posts is easy!
 ----------------------------
